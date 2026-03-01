@@ -25,14 +25,14 @@ export default function Home() {
       <StatBar />
 
       {/* Practice Areas */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <div className="w-12 h-0.5 bg-gold mx-auto mb-4" />
-            <h2 className="font-serif text-3xl sm:text-4xl text-navy">Our Practice Areas</h2>
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">We provide comprehensive legal services across a wide range of practice areas, delivering personalized attention to every case.</p>
+          <div className="text-center mb-16">
+            <p className="text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-4">What We Do</p>
+            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-navy tracking-tight">Our Practice Areas</h2>
+            <p className="mt-6 text-gray-500 max-w-2xl mx-auto leading-relaxed">Comprehensive legal services across a wide range of practice areas, delivering personalized attention to every case.</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {practiceAreas.map((pa) => (
               <PracticeAreaCard key={pa.title} {...pa} />
             ))}
@@ -41,24 +41,26 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="bg-burgundy py-16">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl text-white mb-4">Ready to Discuss Your Case?</h2>
-          <p className="text-white/80 mb-8">Schedule a free, no-obligation consultation with one of our experienced attorneys today.</p>
-          <Link href="/contact" className="bg-gold hover:bg-gold-light text-navy font-semibold px-8 py-4 text-sm uppercase tracking-wider transition-colors inline-block">
+      <section className="relative bg-navy py-24 overflow-hidden">
+        <div className="absolute inset-0 texture-overlay" />
+        <div className="relative max-w-4xl mx-auto px-4 text-center">
+          <div className="w-16 h-[1px] bg-gold/40 mx-auto mb-8" />
+          <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight mb-6">Ready to Discuss<br />Your Case?</h2>
+          <p className="text-white/50 mb-10 text-lg font-light max-w-xl mx-auto">Schedule a free, no-obligation consultation with one of our experienced attorneys today.</p>
+          <Link href="/contact" className="btn-gold-glow bg-gold hover:bg-gold-light text-navy font-bold px-12 py-5 text-sm uppercase tracking-[0.2em] inline-block">
             Schedule a Free Consultation
           </Link>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="py-20">
+      <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <div className="w-12 h-0.5 bg-gold mx-auto mb-4" />
-            <h2 className="font-serif text-3xl sm:text-4xl text-navy">What Our Clients Say</h2>
+          <div className="text-center mb-16">
+            <p className="text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-4">Testimonials</p>
+            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-navy tracking-tight">What Our Clients Say</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((t) => (
               <TestimonialCard key={t.name} {...t} />
             ))}
@@ -67,13 +69,13 @@ export default function Home() {
       </section>
 
       {/* Trust Badges */}
-      <section className="py-16 bg-gray-50 border-t border-gray-100">
+      <section className="py-16 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center items-center gap-12 text-gray-400">
+          <div className="flex flex-wrap justify-center items-center gap-16 text-gray-400">
             {["Super Lawyers", "Avvo 10.0 Rating", "ABA Member", "Texas Bar Association", "Best Lawyers 2024"].map((badge) => (
               <div key={badge} className="text-center">
-                <div className="w-8 h-0.5 bg-gold mx-auto mb-2" />
-                <div className="text-xs uppercase tracking-wider font-semibold">{badge}</div>
+                <div className="w-8 h-[1px] bg-gold/50 mx-auto mb-3" />
+                <div className="text-[10px] uppercase tracking-[0.2em] font-semibold">{badge}</div>
               </div>
             ))}
           </div>

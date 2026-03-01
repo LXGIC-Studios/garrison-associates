@@ -69,11 +69,12 @@ const areas = [
 export default function PracticeAreas() {
   return (
     <>
-      <section className="bg-navy py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="w-12 h-0.5 bg-gold mx-auto mb-4" />
-          <h1 className="font-serif text-4xl sm:text-5xl text-white">Practice Areas</h1>
-          <p className="mt-4 text-white/70 max-w-2xl mx-auto">Comprehensive legal services delivered with decades of experience and an unwavering commitment to our clients.</p>
+      <section className="bg-navy pt-36 pb-20 relative">
+        <div className="absolute inset-0 texture-overlay" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-4">Legal Services</p>
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl text-white tracking-tight">Practice Areas</h1>
+          <p className="mt-6 text-white/50 max-w-2xl mx-auto leading-relaxed font-light">Comprehensive legal services delivered with decades of experience and an unwavering commitment to our clients.</p>
         </div>
       </section>
 
@@ -84,7 +85,7 @@ export default function PracticeAreas() {
               <div className="lg:col-span-2">
                 <div className="mb-6">
                   <div className="w-10 h-0.5 bg-gold mb-4" />
-                  <h2 className="font-serif text-3xl text-navy">{area.title}</h2>
+                  <h2 className="font-serif text-3xl sm:text-4xl text-navy tracking-tight">{area.title}</h2>
                 </div>
                 {area.description.map((p, j) => (
                   <p key={j} className="text-gray-600 leading-relaxed mb-4">{p}</p>

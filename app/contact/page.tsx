@@ -6,11 +6,12 @@ export const metadata: Metadata = { title: "Contact Us | Garrison & Associates" 
 export default function Contact() {
   return (
     <>
-      <section className="bg-navy py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="w-12 h-0.5 bg-gold mx-auto mb-4" />
-          <h1 className="font-serif text-4xl sm:text-5xl text-white">Contact Us</h1>
-          <p className="mt-4 text-white/70 max-w-2xl mx-auto">Schedule your free consultation today. We&apos;re here to help you navigate your legal challenges.</p>
+      <section className="bg-navy pt-36 pb-20 relative">
+        <div className="absolute inset-0 texture-overlay" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-4">Get in Touch</p>
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl text-white tracking-tight">Contact Us</h1>
+          <p className="mt-6 text-white/50 max-w-2xl mx-auto leading-relaxed font-light">Schedule your free consultation today. We&apos;re here to help you navigate your legal challenges.</p>
         </div>
       </section>
 

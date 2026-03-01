@@ -3,25 +3,32 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative bg-navy min-h-[600px] flex items-center">
-      <Image src="/images/hero.jpg" alt="" fill className="object-cover opacity-20" priority />
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
-        <div className="w-20 h-0.5 bg-gold mx-auto mb-8" />
-        <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-white leading-tight max-w-4xl mx-auto">
-          Experienced Legal Representation <span className="text-gold">When It Matters Most</span>
+    <section className="relative bg-navy min-h-screen flex items-center">
+      <Image src="/images/hero.jpg" alt="" fill className="object-cover opacity-15" priority />
+      <div className="absolute inset-0 texture-overlay" />
+      {/* Top gold accent line */}
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent opacity-40" />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+        <div className="w-24 h-[2px] bg-gold mx-auto mb-10 opacity-60" />
+        <p className="text-gold text-sm uppercase tracking-[0.3em] font-semibold mb-6">Established 1999 · Austin, Texas</p>
+        <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-white leading-[1.05] max-w-5xl mx-auto tracking-tight">
+          Relentless Advocacy<br />
+          <span className="text-gold">When It Matters Most</span>
         </h1>
-        <p className="mt-6 text-lg text-white/70 max-w-2xl mx-auto">
-          For over 25 years, Garrison & Associates has provided tenacious, results-driven advocacy for individuals and businesses throughout Texas.
+        <p className="mt-8 text-lg sm:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed font-light">
+          For over 25 years, Garrison &amp; Associates has provided tenacious, results-driven representation for individuals and businesses throughout Texas.
         </p>
-        <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/contact" className="bg-gold hover:bg-gold-light text-navy font-semibold px-8 py-4 text-sm uppercase tracking-wider transition-colors inline-block">
+        <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center">
+          <Link href="/contact" className="btn-gold-glow bg-gold hover:bg-gold-light text-navy font-bold px-10 py-5 text-sm uppercase tracking-[0.2em] inline-block">
             Schedule a Free Consultation
           </Link>
-          <Link href="/practice-areas" className="border border-white/30 hover:border-gold text-white hover:text-gold font-semibold px-8 py-4 text-sm uppercase tracking-wider transition-colors inline-block">
+          <Link href="/practice-areas" className="border border-white/20 hover:border-gold text-white/80 hover:text-gold font-semibold px-10 py-5 text-sm uppercase tracking-[0.2em] transition-all duration-300 inline-block">
             Our Practice Areas
           </Link>
         </div>
       </div>
+      {/* Bottom fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-navy to-transparent" />
     </section>
   );
 }

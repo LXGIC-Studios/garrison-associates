@@ -9,7 +9,7 @@ function PracticeIcon({ title }: { title: string }) {
     "Estate Planning": <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />,
   };
   return (
-    <svg className="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <svg className="w-12 h-12 text-gold opacity-70 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       {paths[title] || paths["Personal Injury"]}
     </svg>
   );
@@ -17,11 +17,12 @@ function PracticeIcon({ title }: { title: string }) {
 
 export default function PracticeAreaCard({ title, description }: { title: string; description: string }) {
   return (
-    <div className="bg-white border border-gray-100 p-8 hover:shadow-xl transition-shadow group">
-      <div className="mb-4"><PracticeIcon title={title} /></div>
-      <h3 className="font-serif text-xl text-navy mb-3 group-hover:text-gold transition-colors">{title}</h3>
-      <p className="text-gray-600 text-sm leading-relaxed mb-4">{description}</p>
-      <Link href="/practice-areas" className="text-gold text-sm font-semibold uppercase tracking-wider hover:text-burgundy transition-colors">
+    <div className="bg-white border border-gray-100 p-10 hover:shadow-2xl hover:border-gold/20 transition-all duration-300 group">
+      <div className="mb-6"><PracticeIcon title={title} /></div>
+      <h3 className="font-serif text-2xl text-navy mb-4 group-hover:text-gold transition-colors duration-300">{title}</h3>
+      <p className="text-gray-600 text-sm leading-relaxed mb-6">{description}</p>
+      <div className="w-8 h-[1px] bg-gold/40 mb-6 group-hover:w-16 transition-all duration-500" />
+      <Link href="/practice-areas" className="text-gold text-sm font-semibold uppercase tracking-[0.15em] hover:text-burgundy transition-colors duration-300">
         Learn More &rarr;
       </Link>
     </div>
