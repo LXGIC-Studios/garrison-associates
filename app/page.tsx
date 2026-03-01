@@ -13,9 +13,9 @@ const practiceAreas = [
 ];
 
 const testimonials = [
-  { quote: "After my accident, I didn't know where to turn. Robert Garrison and his team fought relentlessly for me and secured a settlement that covered all my medical expenses and more. I can't recommend them enough.", name: "Michael T.", caseType: "Personal Injury Client" },
-  { quote: "Sarah Chen handled my custody case with incredible compassion and professionalism. She made a difficult time much more manageable and achieved an outcome that was best for my children.", name: "Jennifer R.", caseType: "Family Law Client" },
-  { quote: "When I was facing serious charges, Marcus Williams was the attorney I needed. His knowledge of criminal law and his courtroom presence were outstanding. The charges were reduced significantly.", name: "David K.", caseType: "Criminal Defense Client" },
+  { quote: "Garrison & Associates fought for us when no one else would. The settlement exceeded our expectations.", name: "Michael T.", caseType: "Personal Injury Client" },
+  { quote: "Sarah Chen handled our custody case with compassion and tenacity. We got the outcome we needed.", name: "Jennifer R.", caseType: "Family Law Client" },
+  { quote: "Professional, thorough, and aggressive when they needed to be. The best decision I ever made was calling this firm.", name: "David K.", caseType: "Criminal Defense Client" },
 ];
 
 export default function Home() {
@@ -68,14 +68,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Badges */}
-      <section className="py-16 border-t border-gray-100">
+      {/* Credential Badges */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center items-center gap-16 text-gray-400">
-            {["Super Lawyers", "Avvo 10.0 Rating", "ABA Member", "Texas Bar Association", "Best Lawyers 2024"].map((badge) => (
-              <div key={badge} className="text-center">
-                <div className="w-8 h-[1px] bg-gold/50 mx-auto mb-3" />
-                <div className="text-[10px] uppercase tracking-[0.2em] font-semibold">{badge}</div>
+          <p className="text-center text-gold text-xs uppercase tracking-[0.3em] font-semibold mb-10">Recognized Excellence</p>
+          <div className="flex flex-wrap justify-center items-center gap-6">
+            {[
+              { label: "Super Lawyers", sub: "2010 - 2024" },
+              { label: "Avvo 10.0", sub: "Superb Rating" },
+              { label: "ABA Member", sub: "American Bar Assoc." },
+              { label: "Best Lawyers", sub: "2024 Edition" },
+            ].map((badge) => (
+              <div key={badge.label} className="credential-badge flex items-center gap-4 min-w-[200px]">
+                <svg className="w-10 h-10 text-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                <div>
+                  <div className="text-sm font-bold text-navy uppercase tracking-wider">{badge.label}</div>
+                  <div className="text-[10px] text-gray-400 uppercase tracking-[0.15em]">{badge.sub}</div>
+                </div>
               </div>
             ))}
           </div>

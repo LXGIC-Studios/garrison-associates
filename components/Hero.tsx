@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="w-24 h-[2px] bg-gold mx-auto mb-10 opacity-60" />
         <p className="text-gold text-sm uppercase tracking-[0.3em] font-semibold mb-6">Established 1999 · Austin, Texas</p>
         <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-white leading-[1.05] max-w-5xl mx-auto tracking-tight">
-          Relentless Advocacy<br />
+          Experienced Legal Representation<br />
           <span className="text-gold">When It Matters Most</span>
         </h1>
         <p className="mt-8 text-lg sm:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed font-light">
