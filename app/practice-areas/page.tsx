@@ -7,7 +7,7 @@ const areas = [
   {
     id: "personal-injury",
     title: "Personal Injury",
-    icon: "⚖️",
+
     description: [
       "When you or a loved one suffers an injury due to someone else's negligence, the consequences can be devastating — physically, emotionally, and financially. At Garrison & Associates, our personal injury attorneys have spent over two decades fighting for the rights of accident victims across Texas.",
       "We handle a wide range of personal injury cases, including motor vehicle accidents, truck accidents, slip and fall injuries, medical malpractice, workplace injuries, and wrongful death claims. Our team conducts thorough investigations, works with expert witnesses, and builds compelling cases designed to maximize your recovery.",
@@ -31,7 +31,7 @@ const areas = [
   {
     id: "criminal-defense",
     title: "Criminal Defense",
-    icon: "🛡️",
+
     description: [
       "Being accused of a crime can be a frightening and overwhelming experience. The stakes are high — your freedom, your reputation, and your future are all on the line. At Garrison & Associates, our criminal defense attorneys are fierce advocates who will fight to protect your constitutional rights at every stage of the legal process.",
       "We represent clients facing a wide range of charges, from misdemeanors to serious felonies. Our defense strategies are built on meticulous investigation, thorough knowledge of criminal law and procedure, and years of courtroom experience. We challenge the prosecution's evidence, identify weaknesses in their case, and work tirelessly to achieve the best possible outcome.",
@@ -43,7 +43,7 @@ const areas = [
   {
     id: "business-law",
     title: "Business Law",
-    icon: "🏛️",
+
     description: [
       "In today's complex business environment, having trusted legal counsel is not a luxury — it's a necessity. Our business law attorneys serve as strategic partners to businesses of all sizes, from startups and small businesses to established corporations, providing practical legal solutions that support your growth and protect your interests.",
       "We assist with entity formation and structuring, contract drafting and negotiation, mergers and acquisitions, employment law compliance, intellectual property protection, and commercial litigation. Our proactive approach helps you identify and mitigate legal risks before they become costly disputes.",
@@ -55,7 +55,7 @@ const areas = [
   {
     id: "estate-planning",
     title: "Estate Planning",
-    icon: "📜",
+
     description: [
       "Estate planning is one of the most important steps you can take to protect your family and ensure your wishes are honored. Without a proper estate plan, your assets may be distributed according to state law rather than your intentions, potentially creating hardship and conflict for your loved ones.",
       "Our estate planning attorneys work closely with you to understand your goals, family dynamics, and financial situation, then craft a comprehensive plan that addresses your unique needs. We prepare wills, revocable and irrevocable trusts, powers of attorney, healthcare directives, and other essential documents.",
@@ -82,8 +82,8 @@ export default function PracticeAreas() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-3 gap-12">
               <div className="lg:col-span-2">
-                <div className="flex items-center gap-3 mb-6">
-                  <span className="text-3xl">{area.icon}</span>
+                <div className="mb-6">
+                  <div className="w-10 h-0.5 bg-gold mb-4" />
                   <h2 className="font-serif text-3xl text-navy">{area.title}</h2>
                 </div>
                 {area.description.map((p, j) => (

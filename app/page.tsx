@@ -72,7 +72,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center items-center gap-12 text-gray-400">
             {["Super Lawyers", "Avvo 10.0 Rating", "ABA Member", "Texas Bar Association", "Best Lawyers 2024"].map((badge) => (
               <div key={badge} className="text-center">
-                <div className="text-2xl mb-1">★</div>
+                <div className="w-8 h-0.5 bg-gold mx-auto mb-2" />
                 <div className="text-xs uppercase tracking-wider font-semibold">{badge}</div>
               </div>
             ))}

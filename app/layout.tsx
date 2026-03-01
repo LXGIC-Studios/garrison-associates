@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${garamond.variable} ${inter.variable} font-sans antialiased`}>
+      <body className={`${garamond.variable} ${inter.variable} font-sans antialiased pt-24`}>
         <Navbar />
         <main>{children}</main>
         <Footer />

@@ -9,7 +9,11 @@ export default function ContactForm() {
   if (submitted) {
     return (
       <div className="bg-white border border-gray-100 p-12 text-center">
-        <div className="text-gold text-5xl mb-4">✓</div>
+        <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-4">
+          <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
         <h3 className="font-serif text-2xl text-navy mb-2">Thank You</h3>
         <p className="text-gray-600">We&apos;ve received your message and will contact you within 24 hours.</p>
       </div>
