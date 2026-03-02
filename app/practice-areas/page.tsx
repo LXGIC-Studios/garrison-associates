@@ -9,7 +9,7 @@ const areas = [
     title: "Personal Injury",
 
     description: [
-      "When you or a loved one suffers an injury due to someone else's negligence, the consequences can be devastating — physically, emotionally, and financially. At Garrison & Associates, our personal injury attorneys have spent over two decades fighting for the rights of accident victims across Texas.",
+      "When you or a loved one suffers an injury due to someone else's negligence, the consequences can be devastating. Physically, emotionally, and financially. At Garrison & Associates, our personal injury attorneys have spent over two decades fighting for the rights of accident victims across Texas.",
       "We handle a wide range of personal injury cases, including motor vehicle accidents, truck accidents, slip and fall injuries, medical malpractice, workplace injuries, and wrongful death claims. Our team conducts thorough investigations, works with expert witnesses, and builds compelling cases designed to maximize your recovery.",
       "We operate on a contingency fee basis, meaning you pay nothing unless we win your case. Our track record includes over $50 million recovered for our clients, and we are committed to holding negligent parties accountable.",
     ],
@@ -33,7 +33,7 @@ const areas = [
     title: "Criminal Defense",
 
     description: [
-      "Being accused of a crime can be a frightening and overwhelming experience. The stakes are high — your freedom, your reputation, and your future are all on the line. At Garrison & Associates, our criminal defense attorneys are fierce advocates who will fight to protect your constitutional rights at every stage of the legal process.",
+      "Being accused of a crime can be a frightening and overwhelming experience. The stakes are high. Your freedom, your reputation, and your future are all on the line. At Garrison & Associates, our criminal defense attorneys are fierce advocates who will fight to protect your constitutional rights at every stage of the legal process.",
       "We represent clients facing a wide range of charges, from misdemeanors to serious felonies. Our defense strategies are built on meticulous investigation, thorough knowledge of criminal law and procedure, and years of courtroom experience. We challenge the prosecution's evidence, identify weaknesses in their case, and work tirelessly to achieve the best possible outcome.",
       "Every person accused of a crime deserves a vigorous defense. We treat every client with respect and dignity, providing honest counsel and relentless advocacy from the moment you contact our firm.",
     ],
@@ -45,7 +45,7 @@ const areas = [
     title: "Business Law",
 
     description: [
-      "In today's complex business environment, having trusted legal counsel is not a luxury — it's a necessity. Our business law attorneys serve as strategic partners to businesses of all sizes, from startups and small businesses to established corporations, providing practical legal solutions that support your growth and protect your interests.",
+      "In today's complex business environment, having trusted legal counsel is not a luxury. It's a necessity. Our business law attorneys serve as strategic partners to businesses of all sizes, from startups and small businesses to established corporations, providing practical legal solutions that support your growth and protect your interests.",
       "We assist with entity formation and structuring, contract drafting and negotiation, mergers and acquisitions, employment law compliance, intellectual property protection, and commercial litigation. Our proactive approach helps you identify and mitigate legal risks before they become costly disputes.",
       "When disputes do arise, we are experienced litigators who will advocate aggressively on your behalf in negotiations, mediation, arbitration, or the courtroom. Our goal is to resolve business disputes efficiently while protecting your bottom line and business relationships.",
     ],

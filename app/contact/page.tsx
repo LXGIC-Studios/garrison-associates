@@ -49,7 +49,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-semibold text-gold text-xs uppercase tracking-[0.15em] mb-1">Office Hours</p>
-                  <p>Monday - Friday: 8:30 AM - 5:30 PM<br />Saturday: By Appointment<br />Sunday: Closed</p>
+                  <p>Monday to Friday: 8:30 AM - 5:30 PM<br />Saturday: By Appointment<br />Sunday: Closed</p>
                 </div>
                 <div className="pt-4 border-t border-white/10">
                   <p className="font-semibold text-gold text-xs uppercase tracking-[0.15em] mb-1">Emergency Contact</p>

@@ -44,7 +44,7 @@ export default function Home() {
           <h2 className="text-center font-serif text-3xl sm:text-4xl text-navy tracking-tight mb-12">Recognized Excellence</h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { label: "Super Lawyers", sub: "2010 - 2024" },
+              { label: "Super Lawyers", sub: "2010 to 2024" },
               { label: "Avvo 10.0", sub: "Superb Rating" },
               { label: "ABA Member", sub: "American Bar Assoc." },
               { label: "Best Lawyers", sub: "2024 Edition" },

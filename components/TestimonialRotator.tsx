@@ -25,7 +25,7 @@ export default function TestimonialRotator() {
           {current.quote}
         </blockquote>
         <p className="text-gold mt-8 font-semibold text-sm tracking-wide">
-          &mdash; {current.name}, {current.caseType}
+          . {current.name}, {current.caseType}
         </p>
 
         {/* Arrows */}
