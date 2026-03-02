@@ -51,7 +51,7 @@ export default function Attorneys() {
       </section>
 
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {attorneys.map((a) => (
             <AttorneyProfile key={a.name} {...a} />
           ))}
