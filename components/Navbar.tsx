@@ -21,7 +21,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-navy/95 backdrop-blur-md shadow-2xl border-b border-white/5" : "bg-transparent"}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-navy backdrop-blur-md shadow-2xl border-b border-white/5" : "bg-transparent"}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-24">
         <Link href="/" className="font-serif text-2xl tracking-wide text-white">
           <span className="text-gold">Garrison</span> &amp; Associates
@@ -43,7 +43,7 @@ export default function Navbar() {
         </button>
       </div>
       {open && (
-        <div className="md:hidden bg-navy/95 backdrop-blur-md px-4 pb-6 space-y-3 border-t border-white/5">
+        <div className="md:hidden bg-navy backdrop-blur-md px-4 pb-6 space-y-3 border-t border-white/5">
           {links.map((l) => (
             <Link key={l.href} href={l.href} onClick={() => setOpen(false)} className="block text-sm uppercase tracking-[0.15em] text-white/70 hover:text-gold transition-colors duration-300 py-2">
               {l.label}
